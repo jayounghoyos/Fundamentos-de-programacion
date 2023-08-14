@@ -1,0 +1,30 @@
+Algoritmo semana2__Ejercicio1
+	
+	Definir a,b,c Como Real
+	
+	Escribir "ingrese el dato a"
+	leer a
+	Escribir  "Ingrese el dato b"
+	Leer b
+	
+	//suma
+	c = a + b
+	Escribir "el resultado de sumar a y b es: "
+	Escribir c
+	
+	//resta
+	c = a - b
+	Escribir "el resultado de restar a y b es: "
+	Escribir c
+	
+	//multiplicación
+	c = a * b
+	Escribir "el resultado de multiplicar a y b es: "
+	Escribir c
+	
+	//division
+	c = a / b
+	Escribir "el resultado de dividir a y b es: "
+	Escribir c
+	
+FinAlgoritmo
