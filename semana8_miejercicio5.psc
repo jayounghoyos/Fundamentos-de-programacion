@@ -6,14 +6,12 @@ Funcion opc <- menu (opc)
 		Escribir "Digita la altura"
 		Leer altura
 		opc = triangulo(base, altura)
-		Escribir "El área de la figura elegida es: ", opc
 	FinSi
 	si opc = 2 Entonces
 		Definir radio Como Real
 		Escribir "Digita radio"
 		leer radio
 		opc = circunferencia(radio)
-		Escribir "El área de la figura elegida es: ", opc
 	FinSi
 	si opc = 3 Entonces
 		Definir altura, baseMayor, baseMenor Como Real
@@ -25,24 +23,25 @@ Funcion opc <- menu (opc)
 		Leer baseMenor
 		
 		opc = cuadrilatero( baseMayor, baseMenor, altura)
-		Escribir "El área de la figura elegida es: ", opc
+		
 	FinSi
 Fin Funcion
 
-Funcion area1 <- triangulo (base, altura)
+Funcion area1 <- triangulo(base, altura)
 	area1 = (base*altura)/2
 Fin Funcion
 
-Funcion area2 <- circunferencia ( radio )
+Funcion area2 <- circunferencia(radio)
 	area2 = 3.14159265359 * radio^2
 Fin Funcion
 
-Funcion area3 <- cuadrilatero ( baseMayor, baseMenor, altura)
+Funcion area3 <- cuadrilatero(baseMayor, baseMenor, altura)
 	area3 = ((baseMayor + baseMenor)*altura)/2
 Fin Funcion
 
 Algoritmo semana8_miejercicio5
-	Definir option, area Como Entero
+	Definir option Como Entero
+	Definir area como Real
 	
 	Escribir "----Bienvenido al saca areas-----"
 	Escribir "Digita la opcion de la figura a la que le quieras sacar el área"
@@ -53,5 +52,5 @@ Algoritmo semana8_miejercicio5
 	Leer option
 	
 	area = menu(option)
-	
+	Escribir "El área de la figura elegida es: ", area
 FinAlgoritmo
