@@ -1,14 +1,30 @@
-Funcion francosApesos <- francosApesosConComision (francos)
-	francosApesos = francos * 5339.54
-	francosApesos = francosApesos - (francosApesos * 0.05)
+Funcion menu <- conversor(op, COP, dol, trm)
+	si op = 1 Entonces
+		menu = COP / trm
+		Escribir "tienes ", menu, " dolar"
+	FinSi
+	si op = 2 Entonces
+		menu = dol * trm
+		Escribir "tienes ", menu, " pesos"
+	FinSi
 Fin Funcion
 
 Algoritmo semana8_miejercicio2
-	Definir francosSuizos, cuentaColombia Como Real
-	Escribir "Ingresa los francosSuizos que te ganaste"
-	Leer francosSuizos
 	
-	cuentaColombia = francosApesosConComision(francosSuizos)
-	Escribir "Tienes ", cuentaColombia, " $COP"
+	Definir dolares, pesos, tasa, option, convertir Como Real
+	
+	Escribir "opcion 1 : dolares a pesos"
+	Escribir "opcion 2 : pesos a dolares"
+	Escribir "ingresa la opción que quieras del conversor"
+	Leer option
+	
+	Escribir "ingresa los dolares"
+	Leer dolares
+	Escribir "ingresa los pesos"
+	Leer pesos
+	Escribir "ingresa la tasa"
+	Leer tasa
+	
+	convertir = conversor(option, pesos, dolares, tasa)
 	
 FinAlgoritmo
